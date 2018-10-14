@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="692.0" prefWidth="1148.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="575.0" minHeight="10.0" prefHeight="575.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="341.0" minHeight="10.0" prefHeight="117.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Link">
+               <content>
+                  <GridPane prefHeight="545.0" prefWidth="1140.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Detected Lanes" />
+                        <Label text="Active Lanes" GridPane.rowIndex="1" />
+                        <Label text="Lane Polarity" GridPane.rowIndex="2" />
+                        <Label text="Max. payload" GridPane.rowIndex="4" />
+                        <Label text="ASPM L0s" GridPane.rowIndex="5" />
+                        <Label text="Entries in Recovery" GridPane.rowIndex="7" />
+                        <Label text="Framing errors (128b130b)" GridPane.rowIndex="8" />
+                        <Label text="Encoding/Disparity errors" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" text="Reset" GridPane.rowIndex="11" />
+                        <GridPane prefHeight="46.0" prefWidth="261.0" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="DetectedLaneLabel_0" />
+                              <Label fx:id="DetectedLaneLabel_1" GridPane.columnIndex="1" />
+                              <Label fx:id="DetectedLaneLabel_2" GridPane.columnIndex="2" />
+                              <Label fx:id="DetectedLaneLabel_3" GridPane.columnIndex="3" />
+                              <Label fx:id="DetectedLaneLabel_4" GridPane.columnIndex="4" />
+                              <Label fx:id="DetectedLaneLabel_5" GridPane.columnIndex="5" />
+                              <Label fx:id="DetectedLaneLabel_6" GridPane.columnIndex="6" />
+                              <Label fx:id="DetectedLaneLabel_7" GridPane.columnIndex="7" />
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="ActiveLaneLabel_0" />
+                              <Label fx:id="ActiveLaneLabel_1" GridPane.columnIndex="1" />
+                              <Label fx:id="ActiveLaneLabel_2" GridPane.columnIndex="2" />
+                              <Label fx:id="ActiveLaneLabel_3" GridPane.columnIndex="3" />
+                              <Label fx:id="ActiveLaneLabel_4" GridPane.columnIndex="4" />
+                              <Label fx:id="ActiveLaneLabel_5" GridPane.columnIndex="5" />
+                              <Label fx:id="ActiveLaneLabel_6" GridPane.columnIndex="6" />
+                              <Label fx:id="ActiveLaneLabel_7" GridPane.columnIndex="7" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab text="Throughput">
+               <content>
+                  <GridPane prefHeight="536.0" prefWidth="1135.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Host to Card MRd" />
+                        <Label text="Host to Card MWr" GridPane.rowIndex="1" />
+                        <Label text="Host to Card Cpl" GridPane.rowIndex="2" />
+                        <Label text="Host to Card Total" GridPane.rowIndex="3" />
+                        <Label text="Host to Card Peak" GridPane.rowIndex="4" />
+                        <Label text="Card to Host MRd" GridPane.rowIndex="6" />
+                        <Label text="Card to Host MWr" GridPane.rowIndex="7" />
+                        <Label text="Card to Host Cpl" GridPane.rowIndex="8" />
+                        <Label text="Card to Host Total" GridPane.rowIndex="9" />
+                        <Label text="Card to Host Peak" GridPane.rowIndex="10" />
+                        <Label fx:id="_MRDRX" GridPane.columnIndex="1" />
+                        <Label fx:id="_MWRRX" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="_CPLRX" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="_RX" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="_PEAKRX" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="_MRDTX" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="_MWRTX" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="_CPLTX" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label fx:id="_TX" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label fx:id="_PEAKTX" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Button mnemonicParsing="false" text="Reset" GridPane.rowIndex="11" />
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab text="LTSSM log">
+               <content>
+                  <GridPane prefHeight="547.0" prefWidth="1148.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="23.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab text="Equalization">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Special">
+               <content>
+                  <GridPane prefHeight="549.0" prefWidth="1148.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Force receiver detection on all lanes" />
+                        <Label text="Disable low-power negotiation" GridPane.rowIndex="1" />
+                        <Label text="Loopback Master (requires retraining to take effect)" GridPane.rowIndex="2" />
+                        <Label text="Target link speed (requires retraining to take effect)" GridPane.rowIndex="3" />
+                        <Label text="Retrain Link" GridPane.rowIndex="4" />
+                        <Label text="Maximum link width" GridPane.rowIndex="5" />
+                        <Label text="Disable Link" GridPane.rowIndex="6" />
+                        <Label text="Enter L2 State" GridPane.rowIndex="7" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab text="Auto">
+               <content>
+                  <GridPane prefHeight="536.0" prefWidth="1148.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="268.0" minHeight="10.0" prefHeight="268.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Control Type" />
+                        <Label text="Script file path" GridPane.rowIndex="1" />
+                        <Label text="Automated Control Status" GridPane.rowIndex="2" />
+                        <ComboBox prefWidth="150.0" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" text="Browse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ToggleButton mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab text="About">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <GridPane GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1055.0" minWidth="10.0" prefWidth="1004.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="569.0" minWidth="10.0" prefWidth="144.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="138.0" text="Dump" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>
